@@ -17,6 +17,7 @@ import user from './routes/userRoutes.js';
 app.use(cookieParser());
 app.use("/api/v1",user);
 app.use("/api/v1",course);
+app.get("/",(req,res)=>res.send(`<h1>Server Working</h1>`))
 
 export default app;
 
