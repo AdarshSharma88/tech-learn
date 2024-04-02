@@ -22,7 +22,7 @@ import { authorizedAdmin, isAuthenticated } from "../middlewares/auth.js";
 const router = express();
 router.route("/me").get(isAuthenticated,getMyProfile);
 router.route("/me").delete(isAuthenticated,deleteMyProfile);
-router.route("/register").post(singleUpload, register);
+router.route("/register").post(singleUpload,register);
 router.route("/changepassword").put(isAuthenticated,changePassword);
 router.route("/updateprofile").put(isAuthenticated,singleUpload,updateProfile);
 router.route("/forgetpassword").post(forgetPassword);

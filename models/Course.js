@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const schema = new mongoose.Schema({
 title:{
     type:String,
-    required:[true,"Please eenter course title"],
+    required:[true,"Please enter course title"],
     minLength:[4,"Must be 4"],
     maxLenght:[80,'cannot exceed 80']
 },
